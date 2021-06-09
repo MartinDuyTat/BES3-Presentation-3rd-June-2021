@@ -70,9 +70,10 @@
 \begin{frame}{Introduction}
   \begin{itemize}
     \setlength\itemsep{2em}
-    \item{$K_SKK$ double tag yields for $\delta_D^{K\pi}$ measurement}
-    \item{Selected $K_{S, L}KK$ events tagged with $K\pi$, $K\pi\pi^0$, $K\pi\pi\pi$ and $Ke\nu$}
+    \item{$K_{S, L}KK$ double tag yields for $\delta_D^{K\pi}$ measurement}
+    \item{Finalized $K_LKK$ events tagged with $K\pi$, $K\pi\pi^0$, $K\pi\pi\pi$}
     \item{Peaking background subtraction}
+    \item{$K_SKK$ vs $Ke\nu$ yields a bit off...}
   \end{itemize}
 \end{frame}
 
@@ -80,7 +81,7 @@
 \begin{frame}{Partially reconstructed double tags}
   \begin{itemize}
     \setlength\itemsep{1em}
-    \item{$K_LKK$ vs $K\pi$, $K\pi\pi^0$, $K\pi\pi\pi$}
+    \item{$K_SKK$ vs $Ke\nu$ and $K_LKK$ vs $K\pi$, $K\pi\pi^0$, $K\pi\pi\pi$}
     \item{More peaking backgrounds}
     \item{More sophisticated sideband subtraction (from $K_SKK$ MEMO):}
     \item{S: Signal region, L: Lower sideband, H: Upper sideband}
@@ -91,12 +92,44 @@
   \begin{equation*}
     \delta, \gamma = \frac{\text{Flat background in S}}{\text{Flat background in L, H}}, \quad \alpha, \beta = \frac{\text{Signal in S}}{\text{Signal in L, H}}
   \end{equation*}
+  \begin{itemize}
+    \item{$\alpha$, $\beta$, $\gamma$, $\delta$ shared between all bins}
+    \item{$\alpha$, $\beta$ from signal MC, $\gamma$, $\delta$ from inclusive MC}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Updated $K_L$ reconstruction}
+  \begin{itemize}
+    \setlength\itemsep{2em}
+    \item{Previously:}
+    \begin{itemize}
+      \item{No additional good tracks}
+      \item{Either: Shower at $\cos(\alpha) > 0.98$ from $K_L$}
+      \item{Or: Shower energy $E_\text{shower} < \SI{0.29}{\giga\eV}$}
+    \end{itemize}
+    \item{New $K_L$ selection (Study by Anita)}
+    \begin{itemize}
+      \item{No additional tracks (good and bad)}
+      \item{Much less peaking background from $K_S\to\pi^+\pi^-$}
+      \item{Lower efficiency but higher purity}
+      \item{Matches MC much better}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Peaking backgrounds}
   \begin{itemize}
-    \item{Peaking backgrounds fixed from inclusive MC}
-    \item{Correct outdated branching fractions}
+    \item{$K_SKK$ backgrounds in $K_LKK$:}
+    \begin{itemize}
+      \item{Get fraction of $K_LKK$ to $K_SKK$ from signal MC}
+      \item{Scale the corresponding double tag yield of $K_SKK$ in each bin}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item{Other peaking backgrounds in each bin fixed from inclusive MC}
+    \begin{itemize}
+      \item{Correct outdated branching fractions}
+    \end{itemize}
   \end{itemize}
   \vspace{0.5cm}
   \centering
@@ -104,20 +137,13 @@
   \begin{tabular}{c|c}
     Mode          & Branching fraction correction \\
     \hline
-    $K_{S, L}$    & $1.44$ \\
+    $K_{S, L}KK$  & $1.44$ \\
     $KK\pi\pi$    & $1.14$ \\
     $K\pi\pi\pi$  & $1.03$ \\
     $K_SK\pi$     & $0.68$ \\
     $K\pi\pi^0$   & $1.04$ \\
     \hline
   \end{tabular}
-  \begin{itemize}
-    \item{$K_SKK$ backgrounds in $K_LKK$:}
-    \begin{itemize}
-      \item{Get fraction of $K_LKK$ to $K_SKK$ from signal MC}
-      \item{Scale the corresponding double tag yield of $K_SKK$}
-    \end{itemize}
-  \end{itemize}
 \end{frame}
 
 \begin{frame}{$K_SKK$ vs $Ke\nu$}
@@ -195,20 +221,20 @@
     Bin                                        & $1$      & $2$      & $-1$     & $-2$ \\
     \hline
     $K_SKK$ vs $K\pi$ raw yield                & $89$     & $72$     & $94$     & $69$ \\
-    $K_SKK$ vs $K\pi$ corrected yield          & $641.0$  & $641.0$  & $683.3$  & $628.9$ \\
-    $K_SKK$ vs $K\pi$ normalized yield         & $0.247$  & $0.247$  & $0.263$  & $0.242$ \\
+    $K_SKK$ vs $K\pi$ corrected yield          & $642.5$  & $646.1$  & $688.2$  & $634.5$ \\
+    $K_SKK$ vs $K\pi$ normalized yield         & $0.246$  & $0.247$  & $0.264$  & $0.243$ \\
     \hline
     $K_SKK$ vs $K\pi\pi^0$ raw yield           & $156$    & $101$    & $201$    & $140$ \\
-    $K_SKK$ vs $K\pi\pi^0$ corrected yield     & $2840.7$ & $2139.3$ & $3565.0$ & $3138.6$ \\
-    $K_SKK$ vs $K\pi\pi^0$ normalized yield    & $0.243$  & $0.183$  & $0.305$  & $0.269$ \\
+    $K_SKK$ vs $K\pi\pi^0$ corrected yield     & $2862.5$ & $2175.1$ & $3589.9$ & $3165.1$ \\
+    $K_SKK$ vs $K\pi\pi^0$ normalized yield    & $0.243$  & $0.184$  & $0.304$  & $0.268$ \\
     \hline
     $K_SKK$ vs $K\pi\pi\pi$ raw yield          & $117$    & $68$     & $135$    & $88$ \\
-    $K_SKK$ vs $K\pi\pi\pi$ corrected yield    & $1674.4$ & $1060.0$ & $1829.4$ & $1452.2$ \\
-    $K_SKK$ vs $K\pi\pi\pi$ normalized yield   & $0.279$  & $0.176$  & $0.304$  & $0.241$ \\
+    $K_SKK$ vs $K\pi\pi\pi$ corrected yield    & $1696.8$ & $1089.0$ & $1846.6$ & $1473.5$ \\
+    $K_SKK$ vs $K\pi\pi\pi$ normalized yield   & $0.278$  & $0.178$  & $0.302$  & $0.241$ \\
     \hline
     $K_SKK$ vs $Ke\nu$ raw yield               & $49$     & $46$     & $63$     & $50$ \\
-    $K_SKK$ vs $Ke\nu$ corrected yield         & $438.1$  & $559.0$  & $558.0$  & $629.5$ \\
-    $K_SKK$ vs $Ke\nu$ normalized yield        & $0.201$  & $0.256$  & $0.255$  & $0.288$ \\
+    $K_SKK$ vs $Ke\nu$ corrected yield         & $434.9$  & $553.0$  & $552.3$  & $615.2$ \\
+    $K_SKK$ vs $Ke\nu$ normalized yield        & $0.202$  & $0.257$  & $0.256$  & $0.285$ \\
     \hline
   \end{tabular}
 \end{frame}
@@ -220,26 +246,92 @@
     Bin                                        & $1$      & $2$      & $-1$     & $-2$ \\
     \hline
     $K_LKK$ vs $K\pi$ raw yield                & $148$    & $102$    & $144$    & $130$ \\
-    $K_LKK$ vs $K\pi$ corrected yield          & $957.6$  & $811.6$  & $995.9$  & $1194.3$ \\
-    $K_LKK$ vs $K\pi$ normalized yield         & $0.242$  & $0.205$  & $0.252$  & $0.302$ \\
+    $K_LKK$ vs $K\pi$ corrected yield          & $962.9$  & $821.3$  & $1001.5$ & $1203.0$ \\
+    $K_LKK$ vs $K\pi$ normalized yield         & $0.241$  & $0.206$  & $0.251$  & $0.302$ \\
     \hline
     $K_LKK$ vs $K\pi\pi^0$ raw yield           & $302$    & $234$    & $319$    & $264$ \\
-    $K_LKK$ vs $K\pi\pi^0$ corrected yield     & $3541.7$ & $3612.4$ & $3588.9$ & $4475.6$ \\
-    $K_LKK$ vs $K\pi\pi^0$ normalized yield    & $0.233$  & $0.237$  & $0.236$  & $0.294$ \\
+    $K_LKK$ vs $K\pi\pi^0$ corrected yield     & $3558.7$ & $3650.8$ & $3593.9$ & $4469.6$ \\
+    $K_LKK$ vs $K\pi\pi^0$ normalized yield    & $0.233$  & $0.239$  & $0.235$  & $0.293$ \\
     \hline
     $K_LKK$ vs $K\pi\pi\pi$ raw yield          & $182$    & $134$    & $175$    & $136$ \\
-    $K_LKK$ vs $K\pi\pi\pi$ corrected yield    & $2532.5$ & $2339.9$ & $2412.7$ & $2547.5$ \\
-    $K_LKK$ vs $K\pi\pi\pi$ normalized yield   & $0.258$  & $0.238$  & $0.245$  & $0.259$ \\
+    $K_LKK$ vs $K\pi\pi\pi$ corrected yield    & $2545.6$ & $2368.8$ & $2431.5$ & $2577.0$ \\
+    $K_LKK$ vs $K\pi\pi\pi$ normalized yield   & $0.257$  & $0.239$  & $0.245$  & $0.260$ \\
     \hline
   \end{tabular}
+\end{frame}
+
+\begin{frame}{Normalized yields}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{DoubleTagYieldKSKK.png}
+      \caption{$K_SKK$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{DoubleTagYieldKLKK.png}
+      \caption{$K_LKK$}
+    \end{subfigure}
+    \caption{Double tag yields}
+  \end{figure}
+  \vspace{-0.5cm}
+  \begin{itemize}
+    \item{Errors:}
+    \begin{itemize}
+      \item{Raw yields: Poisson ($\sqrt{N}$)}
+      \item{Peaking backgrounds: Poisson ($\sqrt{N}/21.8$)}
+      \item{Efficiencies: Binomial}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{$Ke\nu$ Dalitz distributions}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Dalitzp1.png}
+      \caption{Bin $+1$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Dalitzm1.png}
+      \caption{Bin $-1$}
+    \end{subfigure}
+    \caption{Dalitz distributions of $K_SKK$ vs $Ke\nu$}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{$Ke\nu$ Dalitz distributions}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Dalitzp2.png}
+      \caption{Bin $+2$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Dalitzm2.png}
+      \caption{Bin $-2$}
+    \end{subfigure}
+    \caption{Dalitz distributions of $K_SKK$ vs $Ke\nu$}
+  \end{figure}
 \end{frame}
 
 \section{Next steps}
 \begin{frame}{Next steps}
   \begin{itemize}
     \setlength\itemsep{2em}
-    \item{Errors!}
+    \item{Flavour tag correction}
+    \item{Amplitude model for $D\to K_{S, L}h^+h^-$?}
   \end{itemize}
+  \vspace{1cm}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{DCSCorrection.png}
+  \end{figure}
 \end{frame}
 
 \end{document}
